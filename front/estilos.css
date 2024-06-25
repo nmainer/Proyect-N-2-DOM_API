@@ -1,0 +1,238 @@
+/*Cuerpo fondo*/
+.cuerpo::before{
+    position: absolute;
+    content: "";
+    background-image: url(./imagenes/fondocine1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+.cuerpo{
+    position: relative;
+    z-index: 2;
+}
+
+
+/*Elementos encabezado*/
+
+
+/* barra superior nav*/
+.navegacion{
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navegacion:hover{
+    color: black;
+}
+.backnavegador{
+    background-color: rgb(230, 210, 33);
+    opacity: 0.7;
+    box-shadow: 2px 2px 8px black;
+}
+
+/* Titulo icono y fondo principal*/
+.titulocinema{
+    margin-top: 3rem;
+    margin-right:3rem ;
+    font-size: 4rem;
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+.imgicono{
+    margin-bottom: -1.5rem;
+    margin-top: -2rem;
+    margin-right: 0.5rem;
+    width: 10rem;
+    height: auto; 
+}
+
+
+.tituloeicono{
+    background-image: url(./imagenes/cine3.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 8px black;
+    margin-left:4rem ;
+    margin-right:6rem ;
+    margin-top: 6rem;
+    display: flex;
+    justify-content:flex-end; 
+}
+
+/* elementos de pie de pagina*/
+footer{
+    position: relative;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+   
+    box-shadow: 2px 2px 8px black;
+}
+footer::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100% ;
+    background-color: rgb(230, 210, 33);
+    opacity: 0.7;
+    z-index: -1;
+}
+.pie{
+    position: relative;
+    z-index: 2;
+}
+
+/* texto y foto sobremi.html*/
+
+.imagenytextosobremi{
+    display: flex;
+    justify-content:center;
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+}
+.imgsobremi{
+width: 30%;
+height: auto;
+margin-top: 2rem;
+margin-right: 5rem;
+border-radius: 1rem;
+box-shadow: 2px 2px 8px black;
+}
+.textosobremi{
+    margin-top: 10rem;
+    font-weight: bold;
+    width: 30%;
+    height: fit-content;
+    border-radius: 1rem;
+    border: solid 3px rgb(61, 57, 57);
+    padding: 2rem;
+    box-shadow: 2px 2px 8px black;
+}
+
+/*elementos sobre historiadelcine.html*/
+
+.textohistoria{
+    width: 80vh;
+    margin: auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    border: solid 2px rgb(68, 64, 64);
+    box-shadow: 2px 2px 8px black;
+}
+#textohistorica{
+    margin-bottom: 22rem;
+}
+.historia{
+    font-weight: bold;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    transition: all 0.5s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color:rgb(230, 210, 33);
+    box-shadow: 2px 2px 8px black;
+    transition: all 0.5s ease;
+}
+
+
+
+/*elementos aplicados al DOM*/
+
+
+.tar{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    border: solid 3px rgb(87, 77, 77);
+    padding: 1rem;
+    box-shadow: 2px 2px 8px black;
+    transition: transform 0.3s ease;
+}
+.tar:hover{
+    transform: scale(1.1);
+}
+.tit1{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.tit2{
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.imgtarjeta{
+    
+    width: 15rem;
+    height: auto;
+    box-shadow: 2px 2px 8px black;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-bottom: 4rem;  
+}
+
+/* Elementos formulario Peli*/
+.formularioPeli{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+}
+
+
+.formularioPeliContenedor{
+  width: fit-content;
+  margin: auto;
+}
+input{
+    width: 40rem;
+    height: 4rem;
+    border-radius: 1rem;
+    border: solid black 1px;
+    box-shadow: 2px 2px 8px black;
+    display: block;    
+}
+.peliInput{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.cargarPeli ,
+.limpiarForm{
+    width: 16rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.submit{
+margin-top: 2rem;
+ display: flex;
+ justify-content: space-around;
+}
